@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--Title-->
+        <title>Memory Express</title>
+        
+        <meta charset="utf-8"/>
+        
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+       
+        <!--Allows me to style my webpage with CSS-->
+        <link rel = "Stylesheet" type="text/css" href="stylesheet\stylesheet.css"/>
+
+        <!--Allows animation on the webpage-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    
+        />
+
+        <style>
+html
+{
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(rgb(84, 189, 84), white 80% );
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.2;
+  margin: 0px;
+  }
+
+a
+{
+   width: 1px;
+   height: 2px;
+   border-top: 10px;
+   border-left: 10px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: white;
+   -moz-box-align: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items:center;
+  align-items: center;
+  -webkit-aligh-content:center;
+  font-size: 20px;
+}
+a, a:visited, a:active {
+  color: #50b948;
+  text-decoration: none;
+}
+
+
+.mainContainer {
+  text-align: center;
+display: grid;
+  width: 3%;
+  padding: 2px;
+ grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  transform: translateX(1450%);
+}
+
+
+
+.mainContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h2
+{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+}
+#dIv
+{
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+}
+img
+{
+  display:flex;
+  width:250px;
+  height: 200px;
+}
+#Input
+{
+  width: 100%;
+    text-align:center;  
+    font-size: 20px;
+   -webkit-writing-mode: horizontal-tb !important;
+   writing-mode: horizontal-tb !important;
+    text-shadow: none;
+     -webkit-rtl-ordering: logical;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font: 400 13px;
+     border-width: 2px;
+     padding: 5px;     
+}
+span
+{
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+span:hover
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.link:hover
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+#Searches
+{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  border: 5px;
+  text-align: center;
+  display: block;
+}
+#Searches li a
+{
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+
+p {
+  border: 1px;
+  border-style: solid;
+  background-color: white;
+}
+
+
+        </style>
+
+
+    </head>
+    <body>      
+        <div id = "dIv">
+            <a href="index.html">Home</a>
+        </div>   
+        <br>   
+    <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
+
+    <ul id="Searches">
+        <li><a href="Keyboard.html">Keyboard</a></li>
+        <li><a href="CPU.html">CPU</a></li>
+        <li><a href="GPU.html">GPU</a></li>
+        <li><a href="Memory.html">Memory</a></li>
+        <li><a href="ComputerCase.html">Computer Case</a></li>
+        <li><a href="Hdd&SSD.html">HDD & SSD</a></li>
+        <li><a href="Monitor.html">Monitor</a></li>         
+        <li><a href="Motherboards.html">Motherboards</a></li>  
+        <li><a href="PowerSupply.html">Power Supply</a></li>  
+        </ul>
+        </div>
+        <br>
+        <br>
+        <h2>Recommended</h2>
+        <div class="mainContainer">
+            
+          <div class = "link">
+            <a href="RanKey.html"><img src="https://images-na.ssl-images-amazon.com/images/I/61w0BypBzrL._AC_SL1500_.jpg"></a>
+            <p>NPET K10 Gaming Keyboard USB Wired Floating Keyboard, Quiet Ergonomic Water-Resistant Mechanical Feeling Keyboard, Ultra-Slim Rainbow LED Backlit Keyboard for Desktop, Computer, PC</p>
+              </div>
+            </div>
+        
+             
+        <script>
+            var UL = document.getElementById("Searches");
+            // hilde the list by default
+            UL.style.display = "none";
+
+            var searchBox = document.getElementById("Input");
+
+
+            searchBox.addEventListener("focus",  function(){
+            UL.style.display = "block";
+            });
+            
+            searchBox.addEventListener("CPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("GPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("Racing Wheel",  function(){
+            UL.style.display = "block";
+            });
+
+
+
+
+
+            searchBox.addEventListener("emptied", function(){
+            UL.style.display = "none";
+            });
+
+
+            function myFunction() {
+    
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("Input");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("Searches");
+              li = ul.getElementsByTagName("li");
+                  for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                              li[i].style.display = "";
+                                  } else  {
+                                      li[i].style.display = "none";
+                                          }
+              }
+            }
+        </script>
+        
+  
+    </body>
+</html>

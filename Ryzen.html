@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--Title-->
+        <title>Memory Express</title>
+        
+        <meta charset="utf-8"/>
+        
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <link rel="stylesheet" href="stylesheet/style.css">
+
+        <!--Allows animation on the webpage-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    
+        />
+        <style>
+            img
+            {
+                transform: translateY(-250px);
+            }
+        </style>
+
+    </head>
+    <body>      
+        <div id = "dIv">
+            <a href="index.html">Home</a>
+        </div>   
+        <br>   
+    <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
+
+    <ul id="Searches">
+        <li><a href="Keyboard.html">Keyboard</a></li>
+        <li><a href="CPU.html">CPU</a></li>
+        <li><a href="GPU.html">GPU</a></li>
+        <li><a href="Memory.html">Memory</a></li>
+        <li><a href="ComputerCase.html">Computer Case</a></li>
+        <li><a href="Hdd&SSD.html">HDD & SSD</a></li>
+        <li><a href="Monitor.html">Monitor</a></li>         
+        <li><a href="Motherboards.html">Motherboards</a></li>  
+        <li><a href="PowerSupply.html">Power Supply</a></li>  
+        </ul>
+        </div>
+        <br>
+        <h2>AMD Ryzen 5 5600X 6-Core 3.7 GHz Socket AM4 65W 100-100000065BOX Desktop Processor</h2>
+        <div class="mainContainer">
+          <div class="Another">
+          <p>
+            The AMD Ryzen 5 5600X is a desktop processor with 6 cores and Hyperthreading (SMT) based on the Zen 3 architecture. This allows the processor to process a total of 12 threads simultaneously. Launched in November 2020, it is the fastest 6-core Ryzen desktop
+            There are many exciting opportunities available from our retailers. Please click on the offer to visit the retailer website for more information. AMD is not responsible for the contents of these ads, including any typographical or photographic errors. Price and specifications are subject to change without notice and may vary from what is listed on the vendor website. Additional terms and conditions may apply
+        </p>
+            <button  type="submit" onclick="alert('Not in stock')">
+              <span>Add To Cart</span>
+
+
+          </button>
+            </div>
+            <div class = "link">
+              <img src="https://static.bhphoto.com/images/images1000x1000/1604533549_1598377.jpg">
+            
+                </div>
+                
+                <br>
+                
+                    
+            </div>
+           
+        
+             
+        <script>
+            var UL = document.getElementById("Searches");
+            // hilde the list by default
+            UL.style.display = "none";
+
+            var searchBox = document.getElementById("Input");
+
+
+            searchBox.addEventListener("focus",  function(){
+            UL.style.display = "block";
+            });
+            
+            searchBox.addEventListener("CPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("GPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("Racing Wheel",  function(){
+            UL.style.display = "block";
+            });
+
+
+
+
+
+            searchBox.addEventListener("emptied", function(){
+            UL.style.display = "none";
+            });
+
+
+            function myFunction() {
+    
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("Input");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("Searches");
+              li = ul.getElementsByTagName("li");
+                  for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                              li[i].style.display = "";
+                                  } else  {
+                                      li[i].style.display = "none";
+                                          }
+              }
+            }
+        </script>
+        
+  
+    </body>
+</html>

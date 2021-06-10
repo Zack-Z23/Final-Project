@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--Title-->
+        <title>Memory Express</title>
+        
+        <meta charset="utf-8"/>
+        
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <link rel="stylesheet" href="stylesheet/style.css">
+
+        <!--Allows animation on the webpage-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    
+        />
+<style>
+
+
+img {
+  -webkit-transform: translateY(-345px);
+          transform: translateY(-345px);
+  width: 600px;
+  height: 500px;
+}
+
+
+</style>
+
+
+    </head>
+    <body>      
+        <div id = "dIv">
+            <a href="index.html">Home</a>
+        </div>   
+        <br>   
+    <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
+
+    <ul id="Searches">
+        <li><a href="Keyboard.html">Keyboard</a></li>
+        <li><a href="CPU.html">CPU</a></li>
+        <li><a href="GPU.html">GPU</a></li>
+        <li><a href="Memory.html">Memory</a></li>
+        <li><a href="ComputerCase.html">Computer Case</a></li>
+        <li><a href="Hdd&SSD.html">HDD & SSD</a></li>
+        <li><a href="Monitor.html">Monitor</a></li>         
+        <li><a href="Motherboards.html">Motherboards</a></li>  
+        <li><a href="PowerSupply.html">Power Supply</a></li>  
+        </ul>
+        </div>
+        <br>
+        <h2>Cougar CONQUER 2 ATX Full Tower Gaming Case with Integrated RGB Lighting System, Support Mini ITX / Micro ATX / ATX / CEB</h2>
+        <div class="mainContainer">
+          <div class="Another">
+          <p>
+            COUGAR CONQUER 2 breaks away from traditional case designs with unique metal framing, sub-chassis and integrated ARGB lighting system. Your bold modding concepts are achievable with creation of unlimited. A modder’s dream come true!
+            Conquer 2 ’s unique metal framing design breaks away from traditional cases. It’s stylish and dynamic looks makes your creations unlimited.
+            A superior combination of metal frames and four tempered glass panels allow you to show the high-end components and to create an amazing masterpiece beyond gamers’ imagination.
+            Conquer 2 breaks away from traditional case designs. It provides an easy way to customize and modify the case. Your bold modding concepts are achievable with creation of unlimited. A modder’s dream come true!
+            COUGAR’s new Trelux technology provides Conquer 2 with a powerful lighting system of its own, the Trelux dynamic RGB lighting will amaze everybody! Trelux can also work connected to a COUGAR Core Box or to a compatible motherboards’ 5V connection for system-wide lighting synchronization.  
+          </p>
+            <button  type="submit" onclick="alert('Not in stock')">
+              <span>Add To Cart</span>
+
+
+          </button>
+            </div>
+            <div class = "link">
+              <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S01.jpg">
+            
+                </div>
+                
+                <br>
+                
+                    
+            </div>
+           <script>
+        
+             
+            var UL = document.getElementById("Searches");
+            // hilde the list by default
+            UL.style.display = "none";
+
+            var searchBox = document.getElementById("Input");
+
+
+            searchBox.addEventListener("focus",  function(){
+            UL.style.display = "block";
+            });
+            
+            searchBox.addEventListener("CPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("GPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("Racing Wheel",  function(){
+            UL.style.display = "block";
+            });
+
+
+
+
+
+            searchBox.addEventListener("emptied", function(){
+            UL.style.display = "none";
+            });
+
+
+            function myFunction() {
+    
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("Input");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("Searches");
+              li = ul.getElementsByTagName("li");
+                  for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                              li[i].style.display = "";
+                                  } else  {
+                                      li[i].style.display = "none";
+                                          }
+              }
+            }
+        </script>
+        
+  
+    </body>
+</html>

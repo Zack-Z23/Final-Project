@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--Title-->
+        <title>Memory Express</title>
+        
+        <meta charset="utf-8"/>
+        
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <link rel="stylesheet" href="stylesheet/style.css">
+
+        <!--Allows animation on the webpage-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    
+        />
+        <style>
+            img
+            {
+                transform: translateY(-92%);
+            }
+        </style>
+
+    </head>
+    <body>      
+        <div id = "dIv">
+            <a href="index.html">Home</a>
+        </div>   
+        <br>   
+    <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
+
+    <ul id="Searches">
+        <li><a href="Keyboard.html">Keyboard</a></li>
+        <li><a href="CPU.html">CPU</a></li>
+        <li><a href="GPU.html">GPU</a></li>
+        <li><a href="Memory.html">Memory</a></li>
+        <li><a href="ComputerCase.html">Computer Case</a></li>
+        <li><a href="Hdd&SSD.html">HDD & SSD</a></li>
+        <li><a href="Monitor.html">Monitor</a></li>         
+        <li><a href="Motherboards.html">Motherboards</a></li>  
+        <li><a href="PowerSupply.html">Power Supply</a></li>  
+        </ul>
+        </div>
+        <br>
+        <h2>NPET K10 Gaming Keyboard USB Wired Floating Keyboard, Quiet Ergonomic Water-Resistant Mechanical Feeling Keyboard, Ultra-Slim Rainbow LED Backlit Keyboard for Desktop, Computer, PC</h2>
+        <div class="mainContainer">
+          <div class="Another">
+          <p>
+            Professional Gaming Keyboard. UV coated keycaps and injection laser carving ABS keycaps design, the letter of characters never fade. Anti-sweat, prevents keycap damage, enhanced durability, and tactile feedback. Thick and firm stainless steel base plate, long service life, and never deforms. Metal and ABS construction make it more solid and reliable. NPET K10 gaming keyboard is more durable than the plastic keyboard, your best keyboard choice
+            Colorful Illuminated Keyboard. 4 LED lighting backlit modes, breathing(7-color alternate). 3 Adjustable permanent mixed backlit modes, changeable breathing or permanent lighting mode. It can be great for playing the game at night even without light. You can also adjust the brightness and breathing speed of the backlit according to your preference
+            104 Keys Standard Keyboard. 13 multi media keys combinations, 26 keys non-conflict, strengthened space key. 13 combinations of multimedia keys facilitate the operation of your work or game and improve efficiency. Ergonomic design, ergonomics Arc keycap, smooth lines, comfortable feeling, and anti-fatigue. Perfect backlit gaming keyboard for gaming and office
+            High-Quality Floating Keyboard. 2 angle feet on the back of the keyboard can adjust the keyboard height. All "core" water-resistant, triple protection design. Water-resistant keyboard prevents damage from spilled drinks or coffee. Anti-interference magnet ring, gold-plate interface and waterproof braid USB cables, guarantees stable data transmitting, and more durable than other PVC cables, not easily broken. Removable keycaps and free keycap puller, clean becomes easier
+          </p>
+            <button  type="submit" onclick="alert('Not in stock')">
+              <span>Add To Cart</span>
+
+
+          </button>
+            </div>
+            <div class = "link">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61w0BypBzrL._AC_SL1500_.jpg">
+            
+                </div>
+                
+                <br>
+                
+                    
+            </div>
+           
+        
+             
+        <script>
+                      var UL = document.getElementById("Searches");
+            // hilde the list by default
+            UL.style.display = "none";
+
+            var searchBox = document.getElementById("Input");
+
+
+            searchBox.addEventListener("focus",  function(){
+            UL.style.display = "block";
+            });
+            
+            searchBox.addEventListener("CPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("GPU",  function(){
+            UL.style.display = "block";
+            });
+            searchBox.addEventListener("Racing Wheel",  function(){
+            UL.style.display = "block";
+            });
+
+
+
+
+
+            searchBox.addEventListener("emptied", function(){
+            UL.style.display = "none";
+            });
+
+
+            function myFunction() {
+    
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("Input");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("Searches");
+              li = ul.getElementsByTagName("li");
+                  for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                              li[i].style.display = "";
+                                  } else  {
+                                      li[i].style.display = "none";
+                                          }
+              }
+            }
+        </script>
+        
+  
+    </body>
+</html>
