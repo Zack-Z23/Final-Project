@@ -1,133 +1,159 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <!--Title-->
-        <title>Memory Express</title>
-        
-        <meta charset="utf-8"/>
-        
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
 
-        <link rel="stylesheet" href="stylesheet/style.css">
+<head>
 
-        <!--Allows animation on the webpage-->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    
-        />
-<style>
+  <!--Title-->
+  <title>Memory Express</title>
 
+  <meta charset="utf-8" />
 
-img {
-  -webkit-transform: translateY(-345px);
-          transform: translateY(-345px);
-  width: 600px;
-  height: 500px;
-}
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+
+  <link rel="stylesheet" href="stylesheet/style.css">
+
+  <!--Allows animation on the webpage-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  </style>
 
 
-</style>
+</head>
+
+<body>
+  <!--div tag to style the button that takes you to the home page -->
+  <div id="dIv">
+    <!--link to the home page-->
+    <a href="index.html">Home</a>
+    <!--Ending of the Div tag-->
+  </div>
+  <!--Break line that creates the space between home page and search bar-->
+  <br>
+  <!--A Searchbar that uses Javascript for the user to search for different things on the Website -->
+  <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
+
+  <!--All the type of search results and products you can search for in the website-->
+  <ul id="Searches">
+    <!--This is a keyboard search result-->
+    <li><a href="Keyboard.html">Keyboards</a></li>
+    <!-- This is a CPU search result-->
+    <li><a href="CPU.html">CPUs</a></li>
+    <!--This si sa GPU search result-->
+    <li><a href="GPU.html">GPUs</a></li>
+    <!--This is a Memory search result-->
+    <li><a href="Memory.html">Memories</a></li>
+    <!--This is a Computer case search result-->
+    <li><a href="ComputerCase.html">Computer Case</a></li>
+    <!--This is a Hard disk and Solid State drives search result -->
+    <li><a href="Hdd&SSD.html">HDD & SSDs</a></li>
+    <!--This is a Monitor search result-->
+    <li><a href="Monitor.html">Monitors</a></li>
+    <!--This is a Motherboard search result-->
+    <li><a href="Motherboards.html">Motherboards</a></li>
+    <!--This is a Power Supply search result-->
+    <li><a href="PowerSupply.html">Power Supplies</a></li>
+  </ul>
+  <!--This is a break line between the search bar and the content inside the website.-->
+  <br>
+  <!--This is a smaller heading then H1 tag and appropriate for this webpage-->
+  <h2>Cougar CONQUER 2 ATX Full Tower Gaming Case with Integrated RGB Lighting System, Support Mini ITX / Micro ATX /
+    ATX / CEB</h2>
+  <br>
+  <br>
+  <div id="AnotherDiv">
+    <div class="mainContainer">
+      <div class="Another">
+        <p>
+          COUGAR CONQUER 2 breaks away from traditional case designs with unique metal framing, sub-chassis and
+          integrated ARGB lighting system. Your bold modding concepts are achievable with creation of unlimited. A
+          modder’s dream come true!
+          Conquer 2 ’s unique metal framing design breaks away from traditional cases. It’s stylish and dynamic looks
+          makes your creations unlimited.
+          A superior combination of metal frames and four tempered glass panels allow you to show the high-end
+          components and to create an amazing masterpiece beyond gamers’ imagination.
+          Conquer 2 breaks away from traditional case designs. It provides an easy way to customize and modify the case.
+          Your bold modding concepts are achievable with creation of unlimited. A modder’s dream come true!
+          COUGAR’s new Trelux technology provides Conquer 2 with a powerful lighting system of its own, the Trelux
+          dynamic RGB lighting will amaze everybody! Trelux can also work connected to a COUGAR Core Box or to a
+          compatible motherboards’ 5V connection for system-wide lighting synchronization.
+        </p>
+        <button type="submit" onclick="alert('Not in stock')">
+          <span>Add To Cart</span>
 
 
-    </head>
-    <body>      
-        <div id = "dIv">
-            <a href="index.html">Home</a>
-        </div>   
-        <br>   
-    <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
+        </button>
+      </div>
+      <div class="link">
+        <div class="slideshow-container">
 
-    <ul id="Searches">
-        <li><a href="Keyboard.html">Keyboard</a></li>
-        <li><a href="CPU.html">CPU</a></li>
-        <li><a href="GPU.html">GPU</a></li>
-        <li><a href="Memory.html">Memory</a></li>
-        <li><a href="ComputerCase.html">Computer Case</a></li>
-        <li><a href="Hdd&SSD.html">HDD & SSD</a></li>
-        <li><a href="Monitor.html">Monitor</a></li>         
-        <li><a href="Motherboards.html">Motherboards</a></li>  
-        <li><a href="PowerSupply.html">Power Supply</a></li>  
-        </ul>
+          <div class="mySlides fade">
+
+            <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S01.jpg" style="width:60%">
+          </div>
+          <div class="mySlides fade">
+
+            <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S02.jpg" style="width:60%">
+          </div>
+          <div class="mySlides fade">
+
+            <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S04.jpg" style="width:60%">
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </div>
-        <br>
-        <h2>Cougar CONQUER 2 ATX Full Tower Gaming Case with Integrated RGB Lighting System, Support Mini ITX / Micro ATX / ATX / CEB</h2>
-        <div class="mainContainer">
-          <div class="Another">
-          <p>
-            COUGAR CONQUER 2 breaks away from traditional case designs with unique metal framing, sub-chassis and integrated ARGB lighting system. Your bold modding concepts are achievable with creation of unlimited. A modder’s dream come true!
-            Conquer 2 ’s unique metal framing design breaks away from traditional cases. It’s stylish and dynamic looks makes your creations unlimited.
-            A superior combination of metal frames and four tempered glass panels allow you to show the high-end components and to create an amazing masterpiece beyond gamers’ imagination.
-            Conquer 2 breaks away from traditional case designs. It provides an easy way to customize and modify the case. Your bold modding concepts are achievable with creation of unlimited. A modder’s dream come true!
-            COUGAR’s new Trelux technology provides Conquer 2 with a powerful lighting system of its own, the Trelux dynamic RGB lighting will amaze everybody! Trelux can also work connected to a COUGAR Core Box or to a compatible motherboards’ 5V connection for system-wide lighting synchronization.  
-          </p>
-            <button  type="submit" onclick="alert('Not in stock')">
-              <span>Add To Cart</span>
 
 
-          </button>
-            </div>
-            <div class = "link">
-              <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S01.jpg">
-            
-                </div>
-                
-                <br>
-                
-                    
-            </div>
-           <script>
-        
-             
-            var UL = document.getElementById("Searches");
-            // hilde the list by default
-            UL.style.display = "none";
+      </div>
+    </div>
+  </div>
 
-            var searchBox = document.getElementById("Input");
+  <script>
 
+    //Search Bar javascript code.
+    var UL = document.getElementById("Searches");
+    // hide the list by default
+    UL.style.display = "none";
 
-            searchBox.addEventListener("focus",  function(){
-            UL.style.display = "block";
-            });
-            
-            searchBox.addEventListener("CPU",  function(){
-            UL.style.display = "block";
-            });
-            searchBox.addEventListener("GPU",  function(){
-            UL.style.display = "block";
-            });
-            searchBox.addEventListener("Racing Wheel",  function(){
-            UL.style.display = "block";
-            });
+    //Making a variable from an id
+    var searchBox = document.getElementById("Input");
+
+    //A function that displays the search results once the user clicks on it
+    searchBox.addEventListener("focus", function () {
+      UL.style.display = "block";
+    });
 
 
+    //A function that would hide the list after the searcj bar is empty
+    searchBox.addEventListener("emptied", function () {
+      UL.style.display = "none";
+    });
 
+    //A functions that makes the the search bar work
+    function myFunction() {
 
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("Input");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("Searches");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 
-            searchBox.addEventListener("emptied", function(){
-            UL.style.display = "none";
-            });
+</body>
 
-
-            function myFunction() {
-    
-              var input, filter, ul, li, a, i;
-              input = document.getElementById("Input");
-              filter = input.value.toUpperCase();
-              ul = document.getElementById("Searches");
-              li = ul.getElementsByTagName("li");
-                  for (i = 0; i < li.length; i++) {
-                      a = li[i].getElementsByTagName("a")[0];
-                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                              li[i].style.display = "";
-                                  } else  {
-                                      li[i].style.display = "none";
-                                          }
-              }
-            }
-        </script>
-        
-  
-    </body>
 </html>
