@@ -25,11 +25,24 @@
 </head>
 
 <body>
-  <!--div tag to style the button that takes you to the home page -->
-  <div id="dIv">
-    <!--link to the home page-->
-    <a href="index.html">Home</a>
-    <!--Ending of the Div tag-->
+    <!--div tag to style the button that takes you to the home page -->
+    <div id="Header">
+      <li>
+      <!--link to the home page-->
+      <a href="index.html">Home</a>
+      <!--Ending of the Div tag-->
+      </li>
+      <li style="color: whitesmoke;">|</li>
+      <div class="accountInfo">
+      <li>
+          <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Login</a>
+      </li>
+      <li>-</li>
+      <li>
+          <a style="color: rgb(179, 179, 49);"href="" title: Unavailable;> Sign-up</a>
+      </li>
+      </div>
+      <li style="color: whitesmoke;">|</li>
   </div>
   <!--Break line that creates the space between home page and search bar-->
   <br>
@@ -81,37 +94,53 @@
           dynamic RGB lighting will amaze everybody! Trelux can also work connected to a COUGAR Core Box or to a
           compatible motherboards’ 5V connection for system-wide lighting synchronization.
         </p>
+        <!--An "Add cart" button so you will be able to buy the item if you are intrested-->
         <button type="submit" onclick="alert('Not in stock')">
+          <!--What the button would display to the user-->
           <span>Add To Cart</span>
 
 
+          <!-- Ending of the button tag-->
         </button>
+        <!--Ending of the main container div tag that styles it.-->
       </div>
+      <!--Div tag that has nothing do do with the slideshow but keeps it intact-->
       <div class="link">
+        <!--Div tag that positions the content in it-->
         <div class="slideshow-container">
-
+          <!--A div tag that edits the images inside so they will fade in every time the user gets into the website or switches to another image-->
           <div class="mySlides fade">
 
             <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S01.jpg" style="width:60%">
           </div>
+          <!--A div tag that edits the images inside so they will fade in every time the user gets into the website or switches to another image-->
           <div class="mySlides fade">
 
             <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S02.jpg" style="width:60%">
           </div>
+          <!--A div tag that edits the images inside so they will fade in every time the user gets into the website or switches to another image-->
           <div class="mySlides fade">
 
             <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/2AM-0023-00085-S04.jpg" style="width:60%">
           </div>
+          <!-- This is so you can go through the images and see more examples-->
           <div style="text-align:center">
+            <!--The first image in the slideshow-->
             <span class="dot" onclick="currentSlide(1)"></span>
+            <!--The second image in the slideshow-->
             <span class="dot" onclick="currentSlide(2)"></span>
+            <!--The third image in the slideshow-->
             <span class="dot" onclick="currentSlide(3)"></span>
+            <!--Ending of the div tag -->
           </div>
+          <!--Ending of the slideshow div tag-->
         </div>
 
-
+        <!--Ending of the "link" div tag-->
       </div>
+      <!--Ending of the "mainContainer" div tag-->
     </div>
+    <!--Ending of the "AnotherDiv" div tag-->
   </div>
 
   <script>

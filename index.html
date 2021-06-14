@@ -21,10 +21,23 @@
 
 <body>
     <!--div tag to style the button that takes you to the home page -->
-    <div id="dIv">
+    <div id="Header">
+        <li>
         <!--link to the home page-->
         <a href="index.html">Home</a>
         <!--Ending of the Div tag-->
+        </li>
+        <li style="color: whitesmoke;">|</li>
+        <div class="accountInfo">
+        <li>
+            <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Login</a>
+        </li>
+        <li>-</li>
+        <li>
+            <a style="color: rgb(179, 179, 49);"href="" title: Unavailable;> Sign-up</a>
+        </li>
+        </div>
+        <li style="color: whitesmoke;">|</li>
     </div>
     <!--Break line that creates the space between home page and search bar-->
     <br>
@@ -54,111 +67,110 @@
     </ul>
     <br>
     <h2>Shop by Category</h2>
-    
+
     <div id="AnotherDiv">
         <!--This div tag styles the rest of the content that it is contained  -->
         <div class="mainContainer">
-            <!--This, although it doesnt style anything, keeps the button and the pargraph together. -->
-                <div class="link">                  
-                    <a href="GPU.html"><img src="https://media.memoryexpress.com/Images/Categories/VideoCards.svg"></a>
-                    <br>
-                    <span>Video Cards</span>
-                </div>
-                <div class="link">
-                    <a href="CPU.html"><img src="https://media.memoryexpress.com/Images/Categories/Processors.svg"></a>
-                    <br>
-                    <span>Processors</span>
-                </div>
-                <div class="link">
-                    <a href="Keyboard.html"><img
-                            src="https://media.memoryexpress.com/Images/Categories/Keyboards.svg"></a>
-                    <br>
-                    <span>Keyboards</span>
-                </div>
-
-
-                <div class="link">
-                    <a href="Memory.html"><img src="https://media.memoryexpress.com/Images/Categories/Memory.svg"></a>
-                    <br>
-                    <span>Memory</span>
-                </div>
-
-
-
-
-                <div class="link">
-                    <a href="Motherboards.html"><img
-                            src="https://media.memoryexpress.com/Images/Categories/Motherboards.svg"></a>
-                    <br>
-                    <span>Motherboards</span>
-                </div>
-                <div class="link">
-                    <a href="Hdd&SSD.html"><img
-                            src="https://media.memoryexpress.com/Images/Categories/HardDrives.svg"></a>
-                    <br>
-                    <span>Hard Disk Drives/SSDs</span>
-                </div>
-                <div class="link">
-                    <a href="ComputerCase.html"><img
-                            src="https://media.memoryexpress.com/Images/Categories/ComputerCases.svg"></a>
-                    <br>
-                    <span>Computer Cases</span>
-                </div>
-                <div class="link">
-                    <a href="PowerSupply.html"><img
-                            src="https://media.memoryexpress.com/Images/Categories/PowerSupplies.svg"></a>
-                    <br>
-                    <span>PowerSupply</span>
-                </div>
-                <div class="link">
-                    <a href="Monitor.html"><img
-                            src="https://media.memoryexpress.com/Images/Categories/LCDMonitors.svg"></a>
-                    <br>
-                    <span>Monitor</span>
-                </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="GPU.html"><img src="https://media.memoryexpress.com/Images/Categories/VideoCards.svg"></a>
+                <br>
+                <span>Video Cards</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="CPU.html"><img src="https://media.memoryexpress.com/Images/Categories/Processors.svg"></a>
+                <br>
+                <span>Processors</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="Keyboard.html"><img src="https://media.memoryexpress.com/Images/Categories/Keyboards.svg"></a>
+                <br>
+                <span>Keyboards</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="Memory.html"><img src="https://media.memoryexpress.com/Images/Categories/Memory.svg"></a>
+                <br>
+                <span>Memory</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="Motherboards.html"><img
+                        src="https://media.memoryexpress.com/Images/Categories/Motherboards.svg"></a>
+                <br>
+                <span>Motherboards</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="Hdd&SSD.html"><img src="https://media.memoryexpress.com/Images/Categories/HardDrives.svg"></a>
+                <br>
+                <span>Hard Disk Drives/SSDs</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="ComputerCase.html"><img
+                        src="https://media.memoryexpress.com/Images/Categories/ComputerCases.svg"></a>
+                <br>
+                <span>Computer Cases</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="PowerSupply.html"><img
+                        src="https://media.memoryexpress.com/Images/Categories/PowerSupplies.svg"></a>
+                <br>
+                <span>PowerSupply</span>
+            </div>
+            <!--A category in the main page, that will lead the user into another website-->
+            <div class="link">
+                <a href="Monitor.html"><img src="https://media.memoryexpress.com/Images/Categories/LCDMonitors.svg"></a>
+                <br>
+                <span>Monitor</span>
             </div>
         </div>
-        <script>
+    </div>
+    <script>
 
-            //Search Bar javascript code.
-            var UL = document.getElementById("Searches");
-            // hide the list by default
+        //Search Bar javascript code.
+        var UL = document.getElementById("Searches");
+        // hide the list by default
+        UL.style.display = "none";
+
+        //Making a variable from an id
+        var searchBox = document.getElementById("Input");
+
+        //A function that displays the search results once the user clicks on it
+        searchBox.addEventListener("onclick", function () {
+            UL.style.display = "block";
+        });
+
+        searchBox.addEventListener("CPU", function () {
+            UL.style.display = "block";
+        });
+        //A function that would hide the list after the searcj bar is empty
+        searchBox.addEventListener("emptied", function () {
             UL.style.display = "none";
+        });
 
-            //Making a variable from an id
-            var searchBox = document.getElementById("Input");
+        //A functions that makes the the search bar work
+        function myFunction() {
 
-            //A function that displays the search results once the user clicks on it
-            searchBox.addEventListener("onclick", function () {
-                UL.style.display = "block";
-            });
-
-            searchBox.addEventListener("CPU", function () {
-                UL.style.display = "block";
-            });
-            //A function that would hide the list after the searcj bar is empty
-            searchBox.addEventListener("emptied", function () {
-                UL.style.display = "none";
-            });
-
-            //A functions that makes the the search bar work
-            function myFunction() {
-
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("Input");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("Searches");
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++) {
-                    a = li[i].getElementsByTagName("a")[0];
-                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "";
-                    } else {
-                        li[i].style.display = "none";
-                    }
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("Input");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("Searches");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
                 }
             }
-        </script>
+        }
+    </script>
 
 
 </body>

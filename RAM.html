@@ -24,11 +24,24 @@
 </head>
 
 <body>
-   <!--div tag to style the button that takes you to the home page -->
-   <div id="dIv">
-    <!--link to the home page-->
-    <a href="index.html">Home</a>
-    <!--Ending of the Div tag-->
+    <!--div tag to style the button that takes you to the home page -->
+    <div id="Header">
+      <li>
+      <!--link to the home page-->
+      <a href="index.html">Home</a>
+      <!--Ending of the Div tag-->
+      </li>
+      <li style="color: whitesmoke;">|</li>
+      <div class="accountInfo">
+      <li>
+          <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Login</a>
+      </li>
+      <li>-</li>
+      <li>
+          <a style="color: rgb(179, 179, 49);"href="" title: Unavailable;> Sign-up</a>
+      </li>
+      </div>
+      <li style="color: whitesmoke;">|</li>
   </div>
   <!--Break line that creates the space between home page and search bar-->
   <br>
@@ -67,7 +80,7 @@
     <!--This div tag styles the rest of the content that it is contained  -->
     <div class="mainContainer">
       <!--This, although it doesnt style anything, keeps the button and the pargraph together. -->
-      <div class="Another">'
+      <div class="Another">
         <!--Paragraph tag that explains the product presented-->
         <p>
           Enhance the performance and stability of your computer with this Corsair Vengeance RGB Pro 16GB desktop
@@ -75,39 +88,56 @@
           overclocking capability. Corsair iCUE software lets you easily customise the lighting of each module to
           complement your gaming or productivity setup.
         </p>
+        <!--An "Add cart" button so you will be able to buy the item if you are intrested-->
         <button type="submit" onclick="alert('Not in stock')">
+          <!--What the button would display to the user-->
           <span>Add To Cart</span>
 
 
+          <!-- Ending of the button tag-->
         </button>
+        <!--Ending of the main container div tag that styles it.-->
       </div>
+      <!--Div tag that has nothing do do with the slideshow but keeps it intact-->
       <div class="link">
+        <!--Div tag that positions the content in it-->
         <div class="slideshow-container">
 
+           <!--A div tag that edits the images inside so they will fade in every time the user gets into the website or switches to another image-->
           <div class="mySlides fade">
 
             <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/20-236-417-01.jpg" style="width:60%">
           </div>
+           <!--A div tag that edits the images inside so they will fade in every time the user gets into the website or switches to another image-->
           <div class="mySlides fade">
 
             <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/20-236-417-V06.jpg" style="width:60%">
           </div>
+           <!--A div tag that edits the images inside so they will fade in every time the user gets into the website or switches to another image-->
           <div class="mySlides fade">
 
             <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/20-236-417-V08.jpg" style="width:60%">
           </div>
+          <!-- This is so you can go through the images and see more examples-->
           <div style="text-align:center">
+            <!--The first image in the slideshow-->
             <span class="dot" onclick="currentSlide(1)"></span>
+            <!--The second image in the slideshow-->
             <span class="dot" onclick="currentSlide(2)"></span>
+            <!--The third image in the slideshow-->
             <span class="dot" onclick="currentSlide(3)"></span>
+            <!--Ending of the div tag -->
           </div>
+          <!--Ending of the slideshow div tag-->
         </div>
 
-
+        <!--Ending of the "link" div tag-->
       </div>
-
+      <!--Ending of the "mainContainer" div tag-->
     </div>
+    <!--Ending of the "AnotherDiv" div tag-->
   </div>
+
 
 
   <script>
