@@ -3,270 +3,300 @@
 
 <head>
 
-  <!--Title-->
-  <title>Memory Express</title>
+    <!--Title-->
+    <title>Memory Express</title>
 
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <!--Allows me to style my webpage with CSS-->
+    <link rel="Stylesheet" type="text/css" href="stylesheet\stylesheet.css" />
+    <!--Allows animation on the webpage-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <!--Allows me to style my webpage with CSS-->
-  <link rel="Stylesheet" type="text/css" href="stylesheet\stylesheet.css" />
-
-  <!--Allows animation on the webpage-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-  <style>
-html {
-  height: 100%;
-  margin: 0;
-  width: 100%;
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  line-height: 1.2;
-  margin: 0px;
-  background-image: url("http://dataduppedings.no/subcube/Colour_Gradients/Green-White_256x256.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0;
-  text-decoration: none;
-}
-
-a {
-  width: 1px;
-  height: 2px;
-  border-top: 10px;
-  border-left: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  -moz-box-align: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-aligh-content: center;
-  font-size: 20px;
-  color: white;
-}
-a,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-
-.mainContainer {
-  text-align: center;
-  display: grid;
-  padding: 2px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  align-items: center;
-}
-
-.mainContainer::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-align: center;
-  font-size: 30px;
-}
-#Header
-{
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  width: 100%;
-  background-color: black;
-  color: white;
-  list-style-type:none;
-  padding-left: 10px;
-
-}
-#Header li
-{
-  padding-left: 10px;
-}
-.accountInfo
-{
-  display: flex;
-  color: yellow;
-
-}
-#Input {
-  width: 100%;
-  text-align: center;
-  font-size: 20px;
-  -webkit-writing-mode: horizontal-tb !important;
-  writing-mode: horizontal-tb !important;
-  text-shadow: none;
-  -webkit-rtl-ordering: logical;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font: 400 13px;
-  border-width: 2px;
-  padding: 5px;
-}
-span {
-  font-size: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 75%;
-  height: 75%;
-}
-
-link {
-  font-weight: bold;
-}
-.link:hover {
-  text-decoration: underline;
-}
-#Searches {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  border: 5px;
-  text-align: center;
-  display: block;
-}
-#Searches li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 2px;
-  text-decoration: none;
-  font-size: 12px;
-  color: black;
-}
-#AnotherDiv {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  flex-grow: 2;
-}
-
-    p {
-      border: 1px;
-      border-style: solid;
-      background-color: white;
-    }
-  </style>
-
-
+    <style>
+        /*This tag customizes everything inside the website and it is set as a standard*/
+        
+        html {
+            height: 100%;
+            margin: 0;
+            width: 100%;
+        }
+        /*Border box tells the broswer to account any borders and padding it may value so it can determine the height and wdith of an element*/
+        
+        * {
+            box-sizing: border-box;
+        }
+        /*Mainly used for styling the whole webpage. Background image and background position are used to fixate the image in teh center, and the other bakcground stylings are mainly used so the image would stay there*/
+        
+        body {
+            line-height: 1.2;
+            margin: 0px;
+            background-image: url("http://dataduppedings.no/subcube/Colour_Gradients/Green-White_256x256.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            text-decoration: none;
+        }
+        /*This styles all the links so they all have spcific height, width and borders.*/
+        
+        a {
+            width: 1px;
+            height: 2px;
+            border-top: 10px;
+            border-left: 10px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            -moz-box-align: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-aligh-content: center;
+            font-size: 20px;
+            color: white;
+        }
+        /*This removes the link underline from the home and account info buttons*/
+        
+        a,
+         :visited,
+         :hover {
+            text-decoration: none;
+        }
+        /*This makes anything that is inside the div tag into a grid and contains them all together.*/
+        
+        .mainContainer {
+            text-align: center;
+            display: grid;
+            padding: 2px;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            align-items: center;
+        }
+        /*After you click on one of the contents inside the mainContainer, then the container gets cleared and truns into a table instead of a grid. */
+        
+        .mainContainer::after {
+            clear: both;
+            display: table;
+        }
+        /*This styles all the heading 2 tags*/
+        
+        h2 {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            text-align: center;
+            font-size: 30px;
+        }
+        /*Keeps the contents of the different buttons together and styles them*/
+        
+        #Header {
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            color: white;
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        /*This is what makes the space between the buttons*/
+        
+        #Header li {
+            padding-left: 10px;
+        }
+        /*This flexs both account info buttons and makes them yellow*/
+        
+        .accountInfo {
+            display: flex;
+            color: yellow;
+        }
+        /*This code is for the search bar and styles it.*/
+        
+        #Input {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            -webkit-writing-mode: horizontal-tb !important;
+            writing-mode: horizontal-tb !important;
+            text-shadow: none;
+            -webkit-rtl-ordering: logical;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font: 400 13px;
+            border-width: 2px;
+            padding: 5px;
+        }
+        /*This customizes the text underneath the images*/
+        
+        span {
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 75%;
+            height: 75%;
+        }
+        /*All the elements inside the link tag gets bold text */
+        
+        .link {
+            font-weight: bold;
+        }
+        /*This customizes all the elements inside the link tag but whenever the user hovers, and it underlines the code you hover over.*/
+        
+        .link:hover {
+            text-decoration: underline;
+        }
+        /*This tag styles all the search results*/
+        
+        #Searches {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            border: 5px;
+            text-align: center;
+            display: block;
+        }
+        /*Specfies the links inside the search results get customized.*/
+        
+        #Searches li a {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            /* Prevent double borders */
+            background-color: #f6f6f6;
+            padding: 2px;
+            text-decoration: none;
+            font-size: 12px;
+            color: black;
+        }
+        /*This flex's all the elements inside this tag and makes them to position to center. */
+        
+        #AnotherDiv {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            flex-grow: 2;
+        }
+        /*This styles all the images on the website it is linked to, unless I edit some image's size with inline css*/
+        
+        img {
+            width: 40%;
+            height: 40%;
+        }
+        /*Customizes the paragraph tag*/
+        
+        p {
+            border: 1px;
+            border-style: solid;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <!--div tag to style the button that takes you to the home page -->
-    <div id="Header">
-      <li>
-      <!--link to the home page-->
-      <a href="index.html">Home</a>
-      <!--Ending of the Div tag-->
-      </li>
-      <li style="color: whitesmoke;">|</li>
-      <div class="accountInfo">
-      <li>
-          <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Login</a>
-      </li>
-      <li>-</li>
-      <li>
-          <a style="color: rgb(179, 179, 49);"href="" title: Unavailable;> Sign-up</a>
-      </li>
-      </div>
-      <li style="color: whitesmoke;">|</li>
-  </div>
-  <!--Break line that creates the space between home page and search bar-->
-  <br>
-  <!--A Searchbar that uses Javascript for the user to search for different things on the Website -->
-  <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
+    <!--The nav tag that stores the button for the home page and account info, like sign up and login-->
+    <nav>
+        <!--div tag to style the button that takes you to the home page -->
+        <div id="Header">
+            <li>
+                <!--link to the home page-->
+                <a href="index.html">Home</a>
+                <!--Ending of the Div tag-->
+            </li>
+            <li style="color: whitesmoke;">|</li>
+            <div class="accountInfo">
+                <li>
+                    <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Login</a>
+                </li>
+                <li>-</li>
+                <li>
+                    <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Sign-up</a>
+                </li>
+            </div>
+            <li style="color: whitesmoke;">|</li>
+        </div>
+    </nav>
+    <!--Break line that creates the space between home page and search bar-->
+    <br>
+    <!--A Searchbar that uses Javascript for the user to search for different things on the Website -->
+    <input type="text" id="Input" onclick="myFunction()" placeholder="Search for Products" title="Type in a name">
 
-  <!--All the type of search results and products you can search for in the website-->
-  <ul id="Searches">
-    <!--This is a keyboard search result-->
-    <li><a href="Keyboard.html">Keyboards</a></li>
-    <!-- This is a CPU search result-->
-    <li><a href="CPU.html">CPUs</a></li>
-    <!--This si sa GPU search result-->
-    <li><a href="GPU.html">GPUs</a></li>
-    <!--This is a Memory search result-->
-    <li><a href="Memory.html">Memories</a></li>
-    <!--This is a Computer case search result-->
-    <li><a href="ComputerCase.html">Computer Case</a></li>
-    <!--This is a Hard disk and Solid State drives search result -->
-    <li><a href="Hdd&SSD.html">HDD & SSDs</a></li>
-    <!--This is a Monitor search result-->
-    <li><a href="Monitor.html">Monitors</a></li>
-    <!--This is a Motherboard search result-->
-    <li><a href="Motherboards.html">Motherboards</a></li>
-    <!--This is a Power Supply search result-->
-    <li><a href="PowerSupply.html">Power Supplies</a></li>
-  </ul>
-  <!--This is a break line between the search bar and the content inside the website.-->
-  <br>
-  <!--This is a smaller heading then H1 tag and appropriate for this webpage-->
-  <h2>Recommended</h2>
-      <!--This div allows the rest of the content to become a flex box so they can  fit inside the web page no matter what device.-->
-      <div id="AnotherDiv">
+    <!--All the type of search results and products you can search for in the website-->
+    <ul id="Searches">
+        <!--This is a keyboard search result-->
+        <li><a href="Keyboard.html">Keyboards</a></li>
+        <!-- This is a CPU search result-->
+        <li><a href="CPU.html">CPUs</a></li>
+        <!--This si sa GPU search result-->
+        <li><a href="GPU.html">GPUs</a></li>
+        <!--This is a Memory search result-->
+        <li><a href="Memory.html">Memories</a></li>
+        <!--This is a Computer case search result-->
+        <li><a href="ComputerCase.html">Computer Case</a></li>
+        <!--This is a Hard disk and Solid State drives search result -->
+        <li><a href="Hdd&SSD.html">HDD & SSDs</a></li>
+        <!--This is a Monitor search result-->
+        <li><a href="Monitor.html">Monitors</a></li>
+        <!--This is a Motherboard search result-->
+        <li><a href="Motherboards.html">Motherboards</a></li>
+        <!--This is a Power Supply search result-->
+        <li><a href="PowerSupply.html">Power Supplies</a></li>
+    </ul>
+    <!--This is a break line between the search bar and the content inside the website.-->
+    <br>
+    <!--This is a smaller heading then H1 tag and appropriate for this webpage-->
+    <h2>Recommended</h2>
+    <!--This div allows the rest of the content to become a flex box so they can  fit inside the web page no matter what device.-->
+    <div id="AnotherDiv">
         <!--This div tag styles the rest of the content that it is contained  -->
         <div class="mainContainer">
-         
-      <!--Div tag that has nothing do with styling but keeps it intact-->
-      <div class="link">
-        <a href="MSIMotherboard.html"><img
-            src="https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-326-V01.jpg"></a>
-        <p>MSI MAG B550 TOMAHAWK AM4 AMD B550 SATA 6Gb/s ATX AMD Motherboard</p>
-        <!--Ending of the "link" div tag-->
-      </div>
-      <!--Ending of the "mainContainer" div tag-->
+
+            <!--Div tag that has nothing do with styling but keeps it intact-->
+            <div class="link">
+                <a href="MSIMotherboard.html"><img src="https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-326-V01.jpg"></a>
+                <p>MSI MAG B550 TOMAHAWK AM4 AMD B550 SATA 6Gb/s ATX AMD Motherboard</p>
+                <!--Ending of the "link" div tag-->
+            </div>
+            <!--Ending of the "mainContainer" div tag-->
+        </div>
+        <!--Ending of the "AnotherDiv" div tag-->
     </div>
-    <!--Ending of the "AnotherDiv" div tag-->
-  </div>
-  <script>
-    //Search Bar javascript code.
-    var UL = document.getElementById("Searches");
-    // hide the list by default
-    UL.style.display = "none";
+    <script>
+        //Search Bar javascript code.
+        var UL = document.getElementById("Searches");
+        // hide the list by default
+        UL.style.display = "none";
 
-    //Making a variable from an id
-    var searchBox = document.getElementById("Input");
+        //Making a variable from an id
+        var searchBox = document.getElementById("Input");
 
-    //A function that displays the search results once the user clicks on it
-    searchBox.addEventListener("focus", function () {
-      UL.style.display = "block";
-    });
+        //A function that displays the search results once the user clicks on it
+        searchBox.addEventListener("focus", function() {
+            UL.style.display = "block";
+        });
 
 
-    //A function that would hide the list after the searcj bar is empty
-    searchBox.addEventListener("emptied", function () {
-      UL.style.display = "none";
-    });
+        //A function that would hide the list after the searcj bar is empty
+        searchBox.addEventListener("emptied", function() {
+            UL.style.display = "none";
+        });
 
-    //A functions that makes the the search bar work
-    function myFunction() {
+        //A functions that makes the the search bar work
+        function myFunction() {
 
-      var input, filter, ul, li, a, i;
-      input = document.getElementById("Input");
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("Searches");
-      li = ul.getElementsByTagName("li");
-      for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
-        } else {
-          li[i].style.display = "none";
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("Input");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("Searches");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
         }
-      }
-    }
-  </script>
-
-
+    </script>
 </body>
 
 </html>

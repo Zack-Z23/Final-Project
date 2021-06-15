@@ -9,9 +9,9 @@
     <meta charset="utf-8" />
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-
     <!--Allows me to style my webpage with CSS-->
     <link rel="Stylesheet" type="text/css" href="stylesheet\stylesheet.css" />
+
 
     <!--Allows animation on the webpage-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -20,25 +20,28 @@
 </head>
 
 <body>
-    <!--div tag to style the button that takes you to the home page -->
-    <div id="Header">
-        <li>
-        <!--link to the home page-->
-        <a href="index.html">Home</a>
-        <!--Ending of the Div tag-->
-        </li>
-        <li style="color: whitesmoke;">|</li>
-        <div class="accountInfo">
-        <li>
-            <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Login</a>
-        </li>
-        <li>-</li>
-        <li>
-            <a style="color: rgb(179, 179, 49);"href="" title: Unavailable;> Sign-up</a>
-        </li>
+    <!--The nav tag that stores the button for the home page and account info, like sign up and login-->
+    <nav>
+        <!--div tag to style the button that takes you to the home page -->
+        <div id="Header">
+            <li>
+                <!--link to the home page-->
+                <a href="index.html">Home</a>
+                <!--Ending of the Div tag-->
+            </li>
+            <li style="color: whitesmoke;">|</li>
+            <div class="accountInfo">
+                <li>
+                    <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Login</a>
+                </li>
+                <li>-</li>
+                <li>
+                    <a style="color: rgb(179, 179, 49);" href="" title: Unavailable;>Sign-up</a>
+                </li>
+            </div>
+            <li style="color: whitesmoke;">|</li>
         </div>
-        <li style="color: whitesmoke;">|</li>
-    </div>
+    </nav>
     <!--Break line that creates the space between home page and search bar-->
     <br>
     <!--A Searchbar that uses Javascript for the user to search for different things on the Website -->
@@ -97,8 +100,7 @@
             </div>
             <!--A category in the main page, that will lead the user into another website-->
             <div class="link">
-                <a href="Motherboards.html"><img
-                        src="https://media.memoryexpress.com/Images/Categories/Motherboards.svg"></a>
+                <a href="Motherboards.html"><img src="https://media.memoryexpress.com/Images/Categories/Motherboards.svg"></a>
                 <br>
                 <span>Motherboards</span>
             </div>
@@ -110,15 +112,13 @@
             </div>
             <!--A category in the main page, that will lead the user into another website-->
             <div class="link">
-                <a href="ComputerCase.html"><img
-                        src="https://media.memoryexpress.com/Images/Categories/ComputerCases.svg"></a>
+                <a href="ComputerCase.html"><img src="https://media.memoryexpress.com/Images/Categories/ComputerCases.svg"></a>
                 <br>
                 <span>Computer Cases</span>
             </div>
             <!--A category in the main page, that will lead the user into another website-->
             <div class="link">
-                <a href="PowerSupply.html"><img
-                        src="https://media.memoryexpress.com/Images/Categories/PowerSupplies.svg"></a>
+                <a href="PowerSupply.html"><img src="https://media.memoryexpress.com/Images/Categories/PowerSupplies.svg"></a>
                 <br>
                 <span>PowerSupply</span>
             </div>
@@ -131,7 +131,6 @@
         </div>
     </div>
     <script>
-
         //Search Bar javascript code.
         var UL = document.getElementById("Searches");
         // hide the list by default
@@ -141,19 +140,17 @@
         var searchBox = document.getElementById("Input");
 
         //A function that displays the search results once the user clicks on it
-        searchBox.addEventListener("onclick", function () {
+        searchBox.addEventListener("focus", function() {
             UL.style.display = "block";
         });
 
-        searchBox.addEventListener("CPU", function () {
-            UL.style.display = "block";
-        });
+
         //A function that would hide the list after the searcj bar is empty
-        searchBox.addEventListener("emptied", function () {
+        searchBox.addEventListener("emptied", function() {
             UL.style.display = "none";
         });
 
-        //A functions that makes the the search bar work
+        //A functions that makes the the search bar
         function myFunction() {
 
             var input, filter, ul, li, a, i;
@@ -171,8 +168,6 @@
             }
         }
     </script>
-
-
 </body>
 
 </html>
